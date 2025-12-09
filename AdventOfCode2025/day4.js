@@ -43,7 +43,7 @@ function isBottomLeft(col, row) {
 }
 
 let finalFinal = 0;
-let final = -1;   // MUST START NON-ZERO or loop will never run
+let final = -1;   
 
 while (final !== 0) {
 
@@ -72,7 +72,7 @@ while (final !== 0) {
         }
     }
 
-    // Apply removals AFTER scanning
+    
     for (let [row, col] of toRemove) {
         dimensional[row][col] = "x";
     }
